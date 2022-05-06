@@ -1,7 +1,7 @@
 import React from "react";
 import s from './Statistics.module.css';
 
-const Statistics = ({  good, neutral, bad, total, positivePercentage }) => {
+export default function Statistics({  good, neutral, bad, total, positivePercentage }) {
         const statistics = [
         { key: "id-1", value: good, name: "Good" },
         { key: "id-2", value: neutral, name: "Neutral" },
@@ -23,6 +23,4 @@ const Statistics = ({  good, neutral, bad, total, positivePercentage }) => {
       ))} 
         </ul>
     )
-};
-
-export default Statistics;
+}

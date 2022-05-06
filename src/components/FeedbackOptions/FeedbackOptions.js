@@ -1,7 +1,7 @@
 import React from "react";
 import s from './FeedbackOptions.module.css';
 
-const FeedbackOptions = ({ options, onLeaveFeedback }) => { 
+export default function FeedbackOptions({ options, onLeaveFeedback }) { 
     return (
       <ul className={s.list}>
         {options.map(option => (
@@ -12,6 +12,4 @@ const FeedbackOptions = ({ options, onLeaveFeedback }) => {
         
       </ul>
     )
-};
-
-export default FeedbackOptions;
+}
