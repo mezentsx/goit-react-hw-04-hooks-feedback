@@ -10,4 +10,4 @@ export default function Container ({ children }) {
     )
 }
 
-Container.propTypes = { children: PropTypes.array.isRequired }
+Container.propTypes = { children: PropTypes.node.isRequired }
